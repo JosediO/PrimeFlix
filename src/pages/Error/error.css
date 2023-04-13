@@ -1,0 +1,25 @@
+.error404 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - 60px);
+  align-items: center;
+  justify-content: center;
+}
+.error404 h1 {
+  margin: 14px;
+  font-family: monospace;
+  font-size: 90px;
+}
+.error404 a {
+  text-decoration: none;
+  margin-top: 15px;
+  background-color: #000000;
+  padding: 10px;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.error404 a:hover {
+  background-color: #5a5a5a;
+}
