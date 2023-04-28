@@ -38,6 +38,7 @@
   background: #000000;
   color: #ffffff;
   transition: 0.5s;
+  text-decoration: none;
 }
 
 .area-button button:hover {
@@ -47,4 +48,11 @@
 
 .area-button a {
   text-decoration: none;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.area-button a:hover {
+  text-decoration: none;
+  color: #000000;
 }
