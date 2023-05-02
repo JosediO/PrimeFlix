@@ -1,7 +1,10 @@
-import { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
-import api from "../../services/api";
 import "./filmeInfo.css";
+
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import { toast } from "react-toastify";
+
+import api from "../../services/api";
 
 function Filme() {
   const { id } = useParams();
@@ -44,13 +47,13 @@ function Filme() {
     );
 
     if (hasFilme) {
-      alert("Esse filme já está listado!");
+      toast.info("O filme já está nos favoritos!");
       return;
     }
 
     filmesSalvos.push(filme);
     localStorage.setItem("@primeflix", JSON.stringify(filmesSalvos));
-    alert("Filme Salvo com Sucesso");
+    toast.success("O filme foi favoritado!");
   }
 
   if (loading) {
