@@ -13,9 +13,9 @@
 
 ![GitHub Org's stars](https://img.shields.io/github/stars/josedi?style=social)
 
- <h3>Tecnologias utilizadas</h3>
-
+ ## Tecnologias utilizadas
 - ``React.Js``
 - ``Axios``
 - ``React-Toastify``
 - ``CSS``
+##
